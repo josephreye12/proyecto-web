@@ -6,6 +6,7 @@ from django.db import IntegrityError
 from django.utils import timezone
 from django.contrib.auth.decorators import login_required
 from .models import Task
+from django.views.generic.base import TemplateView
 
 from .forms import TaskForm
 
@@ -34,9 +35,14 @@ def tasks(request):
     tasks = Task.objects.filter(user=request.user, datecompleted__isnull=True)
     return render(request, 'tasks.html', {"tasks": tasks})
 
-@login_required
+
+
+def produc(request):
+    return render(request, 'produc.html', {"produc": tasks})
+
+
 def tasks_completed(request):
-    tasks = Task.objects.filter(user=request.user, datecompleted__isnull=False).order_by('-datecompleted')
+    tasks = Task.objects.filter().order_by('-datecompleted')
     return render(request, 'tasks.html', {"tasks": tasks})
 
 
@@ -58,6 +64,13 @@ def create_task(request):
 def home(request):
     return render(request, 'home.html')
 
+#formas de pago
+
+class VistaPaginaFormaPago(TemplateView):
+    template_name = "FormaPago.html"
+
+    def get(self, request, *args, **kwargs):
+        return render(request, self.template_name, {'TituloInicio': 'TDE'})
 
 @login_required
 def signout(request):

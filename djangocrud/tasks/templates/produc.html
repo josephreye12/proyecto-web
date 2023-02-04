@@ -1,0 +1,179 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Muebleria</title>
+    <link href="{% static 'css/estilos.css' %}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="contenedor">
+            <section class="contenido-header">
+                <section class="textos-header">
+                    <h1>CATEGORIAS</h1>
+                    <p>Tu escape a la tranquilidad</p>
+                    <a href="{%url 'tasks_completed' %}">Dormitorio</a>
+                </section>
+                <img src="{% static 'img/dormitorio.jpg' %}" alt="">
+            </section>
+        </div>
+    </header>
+    <section class="about-us">
+        <div class="contenedor1">
+            <h2 class="titulo">Salas</h2>
+            <div class="contenedor-articulo">
+                <div class="articulo" data-aos="zoom-in-right">
+                    
+                    <h3>Sillon fiorella</h3>
+                    <img src="{% static 'img/Sillon-fiorella.jpeg' %}" width= 100%; height= 35%; object-fit= cover alt="">
+                    <p><b>Estilo</b><br/>
+                    Clasico-moderno<br/>
+                    <b>Características</b><br/>
+                    Cojines suaves, Lujosa sensación.
+                    Respaldo dividido para soporte lumbar adicional.</p>
+                    <a href="{%url 'FormaPago' %}">$500.00</a>
+                </div>
+                <div class="articulo" data-aos="zoom-in-right">
+                    <h3>Sofa Triple</h3>
+                    <img src="{% static 'img/Sofa-Triple.jpg' %}" width= 100%; height= 35%; object-fit= cover alt="">
+                    <p><b>Estilo</b><br/>
+                    Contemporáneo<br/>
+                    <b>Características</b><br/>
+                    Cojines suaves, brazos y respaldos acolchados. Lujosa sensación.
+                    Respaldo dividido para soporte lumbar adicional y reposabrazos con relleno.</p>
+                    <a href="#">$1,237.38</a>
+                </div>
+                <div class="articulo" data-aos="zoom-in-right">
+                    <h3>Sillon Eiffel</h3>
+                    <img src="{% static 'img/SILLON-EIFFEL.jpg' %}" width= 100%; height= 35%; object-fit= cover alt="">
+                    <p><b>Estilo</b><br/>
+                    Posmoderno<br/>
+                    <b>Características</b><br/>
+                    	Asiento y respaldo con espuma de alta densidad. Terminado en poro abierto. Terminado con lacas poliuretánicas (libres de plomo) en tono Nogal.</p>
+                    <a href="#">$492.63</a>
+                </div>
+                <div class="articulo" data-aos="zoom-in-right">
+                    <h3>Sofa Doble Lanett</h3>
+                    <img src="{% static 'img/SOFA-DOBLE-LANNET.jpg' %}" width= 100%; height= 35%; object-fit= cover alt="">
+                    <p><b>Estilo</b><br/>
+                    Tradicional<br/>
+                    <b>Características</b><br/>
+                    	Cojines suaves, brazos y respaldos acolchados.</p>
+                    <a href="#">$1,199.99</a>
+                </div>
+                <div class="articulo" data-aos="zoom-in-right">
+                    <h3>Sala Galaxi Ii</h3>
+                    <img src="{% static 'img/SOFA-DOBLE-GALAXI.jpg' %}" width= 100%; height= 35%; object-fit= cover alt="">
+                    <p><b>Estilo</b><br/>
+                    Posmoderno Europeo<br/>
+                    <b>Características</b><br/>
+                    	Terminados en color Nevado. Terminado en poro semiabierto.</p>
+                    <a href="#">1,735.24</a>
+                </div>
+                <div class="articulo" data-aos="zoom-in-right">
+                    <h3>Butaca Burdeos</h3>
+                    <img src="{% static 'img/sillon-burdeos.jpg' %}" width= 100%; height= 35%; object-fit= cover alt="">
+                    <p><b>Estilo</b><br/>
+                    Posmoderno<br/>
+                    <b>Características</b><br/>
+                    	Terminado con lacas poliuretánicas  (libres de plomo y cromo) en color Nogal. Delicadas costuras en el respaldo que forman una celda y aportan un diseño único. Terminado en poro abierto.</p>
+                    <a href="#">$326.30</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="questions contenedor">
+        <section class="textos-questions">
+            <h1>Complementos</h1>
+            <p><b>Cada rincón de casa es especial</b><br/>
+            Reunueva tus ambientes con nuestra decoración</p>
+            <a href="#">decoraciones</a>
+        </section>
+        <img src="{% static 'img/complementos.jpg' %}" alt="" data-aos="zoom-out-up" data-aos-duration="2000">
+    </section>
+
+    <section class="results" style="background-color: #9f8ad0;">
+        <div class="contenedor1 conten-results">
+            <section class="numbers">
+                <div class="number" data-aos="zoom-in-left">
+                    <p><b>Jarron Metalizado Alto</b></p>
+                    <img src="{% static 'img/jarron-metalizado.jpg' %}" width= 100%; height= 60%; object-fit= cover alt="">
+                    <p><b>Categorías:</b> Accesorios Hogar, Decoración</p>
+                </div>
+                <div class="number" data-aos="zoom-in-left">
+                    <p><b>Reloj Arena</b></p>
+                    <img src="{% static 'img/reloj-arena.jpg' %}" width= 100%; height= 60%; object-fit= cover alt="">
+                    <p><b>Categorías:</b> Accesorios Hogar, Decoración</p>
+                </div>
+                <div class="number" data-aos="zoom-in-left">
+                    <p><b>Ginger jar</b></p>
+                    <img src="{% static 'img/Ginger-jar.jpg' %}" width= 100%; height= 60%; object-fit= cover alt="">
+                    <p><b>Categorías:</b> Accesorios Hogar, Decoración</p>
+                </div>
+                <div class="number" data-aos="zoom-in-left">
+                    <p><b>Animales Apilables</b></p>
+                    <img src="{% static 'img/Animales-Apilables.jpg' %}" width= 100%; height= 60%; object-fit= cover alt="">
+                    <p><b>Categorías:</b> Accesorios Hogar, Decoración</p>
+                </div>
+            </section>
+            <section class="results-text">
+                <h4>Complementos</h4>
+                <p>Los detalles no son sólo detalles.<br/> ellos hacen el <b><b>Diseño</b></b></p>
+                <a href="#">Ingrese aquí</a>
+            </section>
+        </div>
+    </section>
+
+    <section class="contenedor1 services">
+        <img src="{% static 'img/mision_vision.jpg' %}" alt="">
+        <div class="box-skills">
+            <h4><i class="far fa-check-circle"> </i> <b>Misión</b> <p>Porque entendemos la necesidad de nuestros clientes,
+            creamos ambientes innovadores, con productos de diseño y 
+            buen gusto con la más alta calidad y precio accesibles.</p></h4>
+            <h4><i class="far fa-check-circle"> </i> <b>Visión</b> <p>Seremos la empresa  innovadora en diseño, fabricación y comercialización
+            de muebles y accesorios para el hogar con materiales de vanguardia, procesos de mejora continua y responsabilidad ambiental. Posicionándonos en el mercado dentro de las tres alternativas más importantes del país.</p></h4>
+        </div>
+    </section>
+
+    <footer>
+        <div class="partFooter">
+            <section class="textos-questions">
+            <h1>Muebleria</h1>
+        </section>
+        </div>
+        <div class="partFooter">
+            <h4>Servicios</h4>
+            <a >contactanos por whatsappnuestro:</a>
+            <a href="#">xxx xxx xxxx</a>
+        </div>
+        <div class="partFooter">
+            <h4>Acerca de</h4>
+            <a href="#">About 1</a>
+        </div>
+        <div class="partFooter">
+            <h4>Redes sociales</h4>
+            <div class="social-media">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/c15b744a04.js" crossorigin="anonymous"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>
+
+{% endblock %}
