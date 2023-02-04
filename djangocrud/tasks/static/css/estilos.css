@@ -174,7 +174,9 @@ nav {
     justify-content: space-around;
 }
 
+
 .articulo {
+    position: relative;
     width: 29%;
     background: #fff;
     margin-bottom: 30px;
@@ -182,6 +184,7 @@ nav {
     padding: 45px 30px 60px 30px;
     transition: 0.5s;
 }
+
 
 .articulo:hover {
     box-shadow: 0 4px 10px rgba(17, 29, 48, .26);
@@ -267,7 +270,6 @@ nav {
 /* Results */
 
 .results {
-    background: #2570ff;
     padding-top: 30px;
 }
 
